@@ -83,7 +83,7 @@ class Converter:
             "-i",
             self.input_file,
             "-ab",
-            "192k",
+            "320k",
             self.output_file,
             "-y",
         ]
@@ -133,7 +133,7 @@ class Converter:
             ffmpeg_params = "-codec:a flac -ar 48000 "
 
         # add common params for any of the above combination
-        ffmpeg_params += "-b:a 192k -vn "
+        ffmpeg_params += "-b:a 320k -vn "
         ffmpeg_pre += "-i "
 
         if trim_silence:
